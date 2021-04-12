@@ -7,4 +7,3 @@ generatorOptions:
 resources:
   - apps-domain-tls.yaml
   - apps-domain-tls-cert.yaml
-  - patch-default-ingress-controller.yaml
