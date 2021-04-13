@@ -22,5 +22,5 @@ spec:
     algorithm: "RSA"
     size: 2048
   issuerRef:
-    name: psi
+    name: public-issuer
     kind: ClusterIssuer
