@@ -1,0 +1,14 @@
+nameReference:
+  - kind: Secret
+    fieldSpecs:
+      - path: spec/secretName
+        kind: Certificate
+        apiVersion: cert-manager/v1
+
+varReference:
+- path: spec/subject/organizations
+  kind: Certificate
+  apiVersion: cert-manager/v1
+- path: spec/dnsNames
+  kind: Certificate
+  apiVersion: cert-manager/v1

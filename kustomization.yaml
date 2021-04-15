@@ -4,5 +4,17 @@ kind: Component
 generatorOptions:
   disableNameSuffixHash: true
 
+configurations:
+  - kustomizeconfig.yaml
+
+vars:
+  - name: APPS_DOMAIN
+    objref:
+      kind: Certificate
+      name: apps-domain-tls-cert
+      apiVersion: cert-manager.io/v1
+    fieldref: 
+      fieldpath: spec.dnsNames.0
+
 resources:
   - apps-domain-tls-cert.yaml
