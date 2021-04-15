@@ -12,3 +12,6 @@ varReference:
 - path: spec/dnsNames
   kind: Certificate
   apiVersion: cert-manager/v1
+- path: spec/secretName
+  kind: Certificate
+  apiVersion: cert-manager/v1
